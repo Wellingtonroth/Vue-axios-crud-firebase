@@ -39,13 +39,17 @@ export default {
 		return {
 			usuario: {
 				nome: '',
-				email: '',
+				email: ''
 			}
 		}
 	},
 	methods: {
 		salvar() {
-			console.log(this.usuario)
+			this.$http.post('usuarios.json', this.usuario)
+			.then(resp => {
+				this.usuario.nome = ''
+				this.usuario.email = ''
+			})
 		}
 	}
 
