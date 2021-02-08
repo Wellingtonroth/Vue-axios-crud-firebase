@@ -84,6 +84,9 @@ export default {
 			this.$http.get('usuarios.json').then(res => {
 				this.usuarios = res.data
 			})
+
+			// Vai que eu acabei de me logaar e quero o token
+			// this.$http.defaults.headers.common['Authorizaion'] = 'abc123'
 		}
 	}
 
