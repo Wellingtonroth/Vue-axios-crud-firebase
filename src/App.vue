@@ -55,6 +55,13 @@
 </template>
 
 <script>
+// PARA ACESSAR O AXIOS LOCALMENTE
+
+// import axios from 'axios'
+
+// axios.get(URLBASE + ...)...
+
+
 export default {
 	data() {
 		return {
